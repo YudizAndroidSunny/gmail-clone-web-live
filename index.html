@@ -14,8 +14,8 @@
       This is a placeholder for base href that will be replaced by the value of
       the `--base-href` argument provided to `flutter build`.
     -->
-    <!--  <base href="/">-->
-    <base href="">
+    <base href="/">
+    <!--    <base href="">-->
 
     <meta charset="UTF-8">
     <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -35,11 +35,65 @@
 
     <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "2585045097";
+    const serviceWorkerVersion = "1568254291";
+
 
     </script>
     <!-- This script adds the flutter initialization JS code -->
     <script src="flutter.js" defer></script>
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Staatliches:regular);
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:"Staatliches", sans-serif;
+        }
+        body{
+            height: 100vh;
+            background-color: #1f1f1f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .container span{
+            color: #fff;
+            letter-spacing: 30px;
+            font-size: 60px;
+            animation: loading 5s ease infinite;
+            opacity: 0;
+        }
+        .container span:nth-child(1){
+            animation-delay: .5s;
+        }
+        .container span:nth-child(2){
+            animation-delay: 1s;
+        }
+        .container span:nth-child(3){
+            animation-delay: 1.5s;
+        }
+        .container span:nth-child(4){
+            animation-delay: 2s;
+        }
+        .container span:nth-child(5){
+            animation-delay: 2.5s;
+        }
+        .container span:nth-child(6){
+            animation-delay: 3s;
+        }
+        .container span:nth-child(7){
+            animation-delay: 3.5s;
+        }
+        @keyframes loading {
+            50%{
+                opacity: 1;
+            }
+        }
+
+    </style>
+
 </head>
 <body>
 <script>
@@ -57,6 +111,18 @@
       });
     });
 
+
+
+
 </script>
+
+    <div class="container">
+        <span>G</span>
+        <span>M</span>
+        <span>A</span>
+        <span>I</span>
+        <span>L</span>
+    </div>
+
 </body>
 </html>
